@@ -35,6 +35,30 @@ public class MainActivity extends AppCompatActivity {
         tv1.setText(result);
     }
 
+    public void sub(View view){
+        int val1 = Integer.parseInt(et1.getText().toString());
+        int val2 = Integer.parseInt(et2.getText().toString());
+
+        String result = String.valueOf(val1 - val2);
+        tv1.setText(result);
+    }
+
+    public void mul(View view){
+        int val1 = Integer.parseInt(et1.getText().toString());
+        int val2 = Integer.parseInt(et2.getText().toString());
+
+        String result = String.valueOf(val1 * val2);
+        tv1.setText(result);
+    }
+
+    public void div(View view){
+        double val1 = Double.parseDouble(et1.getText().toString());
+        double val2 = Double.parseDouble(et2.getText().toString());
+
+        String result = String.valueOf(val1 / val2);
+        tv1.setText(result);
+    }
+
     @Override
     protected void onStart(){
         super.onStart();
