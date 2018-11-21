@@ -28,7 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
 //  creiamo un metodo per sommare
     public void sum(View view){
-        
+        int val1 = Integer.parseInt(et1.getText().toString());
+        int val2 = Integer.parseInt(et2.getText().toString());
+
+        String result = String.valueOf(val1 + val2);
+        tv1.setText(result);
     }
 
     @Override
