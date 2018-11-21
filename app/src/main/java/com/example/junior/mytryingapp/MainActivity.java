@@ -26,38 +26,42 @@ public class MainActivity extends AppCompatActivity {
         tv1 = (TextView)findViewById(R.id.txt_result);
     }
 
-//  creiamo un metodo per sommare
+//  creiamo metodi per le 4 operazioni principali
     public void sum(View view){
         int val1 = Integer.parseInt(et1.getText().toString());
         int val2 = Integer.parseInt(et2.getText().toString());
 
-        String result = String.valueOf(val1 + val2);
-        tv1.setText(result);
+        tv1.setText(String.valueOf(val1 + val2));
+        Toast.makeText(this, "Hai sommato", Toast.LENGTH_LONG).show();
     }
 
     public void sub(View view){
         int val1 = Integer.parseInt(et1.getText().toString());
         int val2 = Integer.parseInt(et2.getText().toString());
 
-        String result = String.valueOf(val1 - val2);
-        tv1.setText(result);
+        tv1.setText(String.valueOf(val1 - val2));
+        Toast.makeText(this, "Hai sottratto", Toast.LENGTH_LONG).show();
+
     }
 
     public void mul(View view){
         int val1 = Integer.parseInt(et1.getText().toString());
         int val2 = Integer.parseInt(et2.getText().toString());
 
-        String result = String.valueOf(val1 * val2);
-        tv1.setText(result);
+        tv1.setText(String.valueOf(val1 * val2));
+        Toast.makeText(this, "Hai moltiplicato", Toast.LENGTH_LONG).show();
+
     }
 
     public void div(View view){
         double val1 = Double.parseDouble(et1.getText().toString());
         double val2 = Double.parseDouble(et2.getText().toString());
 
-        String result = String.valueOf(val1 / val2);
-        tv1.setText(result);
+        tv1.setText(String.format("%.6f",(val1 / val2)));
+        Toast.makeText(this, "Hai diviso", Toast.LENGTH_LONG).show();
+
     }
+
 
     @Override
     protected void onStart(){
