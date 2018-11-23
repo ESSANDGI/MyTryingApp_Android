@@ -12,4 +12,7 @@
     <string name="text_radio_button_2">SUB</string>
     <string name="text_radio_button_3">DIV</string>
     <string name="text_radio_button_4">MUL</string>
+
+    <!--button text-->
+    <string name="text_button_1">Calculate</string>
 </resources>
