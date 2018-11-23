@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">MyTryingApp</string>
+    <string name="app_name">Calculator</string>
+    <!--input texts-->
+    <string name="text_num_1">give me first valor</string>
+    <string name="text_num_2">give me second valor</string>
+
+    <!--result text-->
+    <string name="text_result">Result</string>
+
+    <!--radio buttons text-->
+    <string name="text_radio_button_1">SUM</string>
+    <string name="text_radio_button_2">SUB</string>
+    <string name="text_radio_button_3">DIV</string>
+    <string name="text_radio_button_4">MUL</string>
 </resources>
